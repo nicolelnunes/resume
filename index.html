@@ -1,173 +1,189 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicole Nunes</title>
 
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<div class="container">
-  <div class="header">
-    <div class="full-name">
-      <span class="first-name">Nicole</span> 
-      <span class="last-name">Nunes</span>
-    </div>
-    <div class="contact-info">
-      <span class="email">Email: </span>
-      <span class="email-val">nicolelnunes02@gmail.com</span>
-      <span class="separator"></span>
-      <span class="phone">Phone: </span>
-      <span class="phone-val">+351 965511299</span>
-      <span class="separator"></span>
-      <a href="https://github.com/nicolelnunes">
-        <img src="images/github.png" width="4%" height="4%">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- LEFT SIDE -->
+    <aside class="sidebar">
+
+      <img 
+        src="images/profile.jpeg" 
+        alt="Photo of Nicole Nunes" 
+        class="profile-photo"
+      />
+      <h1>Nicole Nunes</h1>
+      <p class="role">Master in Computer Engineering</p>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Research & Projects</a>
+        <a href="#extraCurricular">Extracurricular</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="links">
+        <a href="https://github.com/nicolelnunes" >
+        <img src="images/github.png" alt="Github logo">
     
       </a>
         <span class="separator"></span>
       <a href="https://www.linkedin.com/in/nicole-nunes-0236b2237/">
-        <img src="images/linkedIn.png" width="4%" height="4%">
-        </a>  
-    </div>
-    
-
-  </div>
-   <div class="details">
-    <div class="section">
-      <div class="section__title">Education</div>
-      <div class="section__list">
-        <div class="section__list-item">
-          <div class="left">
-            <div class="name">Bachelor's Computer Engineering</div>
-            <div class="addr">Iscte - University Institute of Lisbon</div>
-          </div>
-          <div class="right">
-            <div class="duration">Sep 2020 - Jun 2023</div>
-          </div>
-        </div>
-        <div class="section__list-item">
-          <div class="section__list-item">
-          <div class="left">
-            <div class="name">Master's Computer Engineering</div>
-            <div class="addr">Iscte - University Institute of Lisbon</div>
-            <div class="title">"Topic Modeling Applied to Portuguese Tiny Text"</div>
-          </div>
-          <div class="right">
-            <div class="duration">Sep 2023 - Dec 2025</div>
-          </div>
-          </div>
-        </div>
-
+        <img src="images/linkedIn.png" alt="LinkedIn logo">
+        </a>
       </div>
-    </div>
-    <div class="section">
-      <div class="section__title">Skills</div>
-      <div class="section__list">
-        <div class="section__list-item">
+    </aside>
+
+    <!-- RIGHT SIDE -->
+    <main class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          blablabla
+        </p>
+      </section>
+
+      <section id="skills">
+      <h2>Skills</h2>
+
+      
+        <div class="skills-group">
+          <h3>Programming Languages & Data</h3>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>C</li>
+            <li>Kotlin</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3>Machine Learning & NLP</h3>
+          <ul class="skills-list">
+            <li>scikit-learn</li>
+            <li>LDA</li>
+            <li>BERTopic</li>
+            <li>BERT</li>
+          </ul>
+        </div>
         
-            <div><b>Programming & Data:</b> Python, SQL, Java, Javascript, C, Kotlin</div>
-            
-            <div><b>Machine Learning & NLP:</b> scikit-learn, LDA, BERTopic, BERT</div>
-            <div><b>Databases:</b> MySQL, MongoDB</div>
-            <div><b>Other:</b> Git, Bash</div>
+        <div class="skills-group">
+          <h3>Databases</h3>
+          <ul class="skills-list">
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
 
+        <div class="skills-group">
+          <h3>Other</h3>
+          <ul class="skills-list">
+            <li>Git</li>
+            <li>Bash</li>
+          </ul>
         </div>
-      </div>
-      
-  </div>
-     <div class="section">
-      <div class="section__title">Research & Projects</div> 
-       <div class="section__list">
-         <div class="section__list-item">
-           <div class="name">Master's Thesis - Topic Modeling Applied to Portuguese Tiny Text</div>
-           <ul class="text">
-            <li> Applied topic modeling techniques (LDA, BERTopic) to extremely short, user-generated Portuguese texts;</li>
-            <li>Designed and compared multiple text preprocessing pipelines, generating six distinct datasets;</li>
-             <li>Addressed challenges in topic evaluation for short texts and proposed a novel metric (“Singularity Score”) to mimic the human annotators;</li>
-             <li>Implemented experiments in Python using NLP and machine learning libraries; </li>
-             <li>Contributed to identifying key challenges in bridging the gap between science and policy by analyzing and structuring public discourse data; </li>
-             <li>Conducted as part of the FCT-funded project ISDAPPP (Information Systems and Data Analysis for Public Policy Planning).</li>
-           </ul>
-           </div>
-         <div class="section__list-item">
-                    <div class="name">Topic Modeling & Sentiment Analysis (Text Mining)</div>
-           <ul class="text">
-            <li>Implemented sentiment analysis and topic modeling pipelines on Twitter and Reuters datasets;</li>
-            <li> Applied classical NLP models (Multinomial Naive Bayes, LDA, LSA, ...) and transformer-based models (BERT).</li>
-           </ul>
-         </div>
-       <div class="section__list-item">
-                    <div class="name">Wine Quality Classification (Machine Learning)</div>
-           <ul class="text">
-            <li>Preprocessed and analyzed physicochemical wine quality data;</li>
-            <li> Applied supervised and unsupervised machine learning algorithms (e.g., K-means) using scikit-learn;</li>
-            <li>Fllowed CRISP-DM methodology;</li>
-            <li>Interpreted results to assess relationships between features and wine quality.</li>
-           </ul>
-         </div>
-       </div>
-      
 
-       
-    </div>
-     <div class="section">
-       <div class="section__title">ExtraCurricular Activities</div> 
-       <div class="section__list">
-         <div class="section__list-item">
-           <div class="left"><div class="name">
-             Volunteer - Universo D (Human Rights Education Program)
-             </div></div>
-           <div class="right">
-              (2023 - 2024)
-           </div>
-           <div class="section__list-item.text">
-            Assisted in planning and facilitating interactive learning experiences for multiple groups with different age
-ranges (children, adolescents, adults).
-           </div>
-         </div>
-         
-        <div class="section__list-item">
-           <div class="left"><div class="name">
-            Assistant Basketball Coach - Under-12 Team 
-             </div></div>
-           <div class="right">
-              (2020 - 2021)
-           </div>
-           <div class="section__list-item.text">
-            Mentoring role to young athletes for Linces de Mafra.
-           </div>
-         </div>
-       
-       <div class="section__list-item">
-           <div class="left"><div class="name">
-            Competitive Basketball
-             </div></div>
-           <div class="right">
-              (2017 - 2021)
-           </div>
-           <div class="section__list-item.text">
-            Played competitive basketball for Linces de Mafra and Sporting Clube de Portugal.
-           </div>
-         </div>
-       </div>
-         
-       </div>
-     <div class="section">
-     <div class="section__title">
-       Scientific Dissimination
-       </div>
-       <div class="section__list">
-        <div class="left"><div class="name">
-        Poster Presentation - RECPAD 2025
+        
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="item">
+          <h3>Master's in Computer Engineering</h3>
+          <span>Sep 2023 &ndash; Dec 2025</span>
+          <p>Iscte &ndash; University Institute of Lisbon </p><p> 
+          Master's thesis: <em>“Topic Modeling Applied to Portuguese Tiny Text.”</em>
+          </p>
         </div>
-         <details>
-        <summary>See Poster</summary>
-        <img src="images/poster.png" alt="Poster for RECPAD 2025" width="145%" height="145%">
-      </details>
-       </div>
-       <div class="section__list">
-        <div class="left"><div class="name">
-        Full Article Accepted - World Cist 2026
+        
+        <div class="item">
+          <h3>Bachelor's in Computer Engineering</h3>
+          <span>Sep 2020 &ndash; Jun 2023</span>
+          <p>Iscte &ndash; University Instute of Lisbon</p>
         </div>
-     </div>
-     </div>
+      </section>
+
+      <section id="projects">
+        <h2>Research & Projects</h2>
+        <div class="item">
+          <h3>Master's Thesis &ndash; <em>Topic Modeling Applied to Portuguese Tiny Text</em></h3>
+          <p>Designed and compared multiple preprocessing pipelines and applied topic modeling techniques (LDA, BERTopic) to extremely short, user-generated Portuguese texts. </p>
+          <p>Addresed challenges in topic evaluation for short texts and proposed a novel metric, "Singularity Score".</p>
+          <p>Conducted as part of the FCT-funded project ISDAPPP (Information Systems and Data Analysis for
+Public Policy Planning).</p>
+          <a href="#">View on GitHub →</a>
+        </div>
+
+        <div class="item">
+          <h3>Topic Modeling & Sentiment Analysis (Text Mining)</h3>
+          <p>Implemented sentiment analysis and topic modeling pipelines on Twitter and Reuters datasets.</p>
+          <p>Applied classical NLP models (Multinomial Naive Bayes, LDA, LSA) and transformer-based models (BERT).</p>
+          <a href="#">View on GitHub →</a>
+        </div>
+
+        <div class="item">
+          <h3>Wine Quality Classification (Machine Learning)</h3>
+          <p>Following CRISP-DM methodology, preprocessed physicochemical wine quality data and applied supervised and unsupervised machine learning algorithms using scikit-learn.</p> 
+          <p>Interpreted results to assess relationships between features and wine quality</p>
+        </div>
+
+        <div class="item">
+          <h3>Human Rights Educational Mobile App &ndash; UX & Data Visualization Prototype</h3>
+          <p>Designed a prototype of an educational mobile application focused on human rights awareness and conducted usability testing using low-fidelity paper prototypes.</p>
+          <p> Developed a high-fidelity interactive prototype in Figma, incorporating user feedback.</p>
+        </div>
+
+      </section>
+
+      <section id="extraCurricular">
+        <h2>Extracurricular Activities</h2>
+        
+          <div class="item">
+            <h3>Volunteer &ndash; Universo D (Human Rights Education Program)</h3>
+            <span>2023 &ndash; 2024</span>
+            <p>Assisted in planning and facilitating interactive learning experiences for multiple groups with different age ranges (children, adolescents, adults)</p>
+          </div>
+
+          <div class="item">
+            <h3>Assistant Basketball Coach Under &ndash; 12 Team</h3>
+            <span>2020 &ndash; 2021</span>
+            <p>Mentoring role to young athletes for Linces de Mafra</p>
+          </div>
+
+          <div class="item">
+            <h3>Competitive Basketball</h3>
+            <span>2017 &ndash; 2021</span>
+            <p>Played competitive basketball for Linces de Mafra and Sporting Clube de Portugal</p>
+          </div>
+
+
+
+
+
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+      </section>
+    </main>
   </div>
-</div>
+
+<script src="main.js"></script>
+</body>
+</html>
