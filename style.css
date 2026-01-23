@@ -158,6 +158,28 @@ section h2 {
   text-decoration: underline;
 }
 
+.skills-container {
+  display: flex;
+}
+
+/* Two columns on desktop */
+.skills-column {
+  flex: 1;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-group {
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {
